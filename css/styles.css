@@ -5,14 +5,22 @@ body {
     padding: 0;
 }
 
-header {
+header, footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+
+header {
+    border-bottom: 2px solid #222;
+}
+
+footer {
+    border-top: 2px solid #222;
+}
+
+header h1 {
+    margin: 0;
 }
 
 nav ul {
@@ -20,6 +28,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: space-between;
 }
 
 nav ul li {
@@ -30,12 +39,6 @@ nav ul li {
     padding: 20px;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+footer p {
+    margin: 0;
 }
