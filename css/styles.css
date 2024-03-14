@@ -5,84 +5,77 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex; /* Set the display property to flex to use flexbox */
+    display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* Styling for header and footer */
+/* Styling for header */
 header, footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
 }
 
-/* Styling for header */
+/* Header Styling */
 header {
     border-bottom: 2px solid #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1, header .subtitle {
+    margin: 0;
+}
+
+header .subtitle {
+    font-size: 1.2em;
+    display: inline;
+    margin-left: 10px;
+}
+
+header nav ul, footer nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+header nav ul li, footer nav ul li {
+    list-style: none;
+}
+
+header nav ul li a, footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover, footer nav ul li a:hover {
+    background-color: #fff;
+    color: #333;
 }
 
 /* Styling for footer */
 footer {
     border-top: 2px solid #222;
-    margin-top: auto; /* Use margin-top instead of margin-bottom */
+    margin-top: auto;
     bottom: 0;
     width: 100%;
 }
 
-header nav ul {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin-top: 10px; /* Add some space between the header and the links */
-}
-
-header nav ul li {
-    list-style: none;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-}
-
-header nav ul li a:hover {
-    background-color: #fff;
-    color: #333;
-}
-
-/* Styling for main content container */
 .container {
     padding: 20px;
-    text-align: center; /* Fix typo: was cneter */
+    text-align: center;
 }
 
-/* Styling for footer paragraph */
 footer p {
     margin: 0;
-}footer nav ul {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin-top: 10px; /* Add some space between the paragraph and the links */
-}
-
-footer nav ul li {
-    list-style: none;
-}
-
-footer nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-}
-
-footer nav ul li a:hover {
-    background-color: #fff;
-    color: #333;
 }
