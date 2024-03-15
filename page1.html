@@ -9,6 +9,7 @@
 <body>
     <header>
         <h1>Portfolio</h1>
+        <br>
         <nav>
             <ul>
                 <li><a href="index.html">Homepage</a></li>
@@ -22,8 +23,11 @@
         <img src = "images/jumpijumper.PNG" alt ="screenshot of gameplay" width = "250" height = "200">
         </div>
         <div class = "text-portfolioOne" style="line-height: 100%;">
-        <p>This is my most recent project, Jumpi Jumper. A 3D platformer that I developed the renderer and physics engine for. 
-            I spent many hours working on this project.</p>
+        <p>This is my most recent project, Jumpi Jumper. This game is a simple 3D platformer that incorporates jumping and tight movement with
+            pickups and a time limit. On this project I created the basic renderer utilizing DirectX 11 to take in models, position and orientation data 
+            to display the proper items on screen. On this project I created a physics engine that incorporates 3 shapes (AABB's, OBB's, Spheres) and planes.
+            With this simple physics engine I created a game object system that allows for unique behaviors and interactions per game object. 
+            </p>
         </div>
     </div>
 
@@ -34,7 +38,8 @@
         <div class = "text-portfolioThree" style="line-height: 100%;">
         <p>This project titled Star Penguin was a project I worked with a team on to create. My teammates handled the renderer which was vulkan 
             based, while I handled the engine side using FLECS. This was my first time using and learning about an ECS style project. It was super
-            informative and helped to learn important engine architecture that I utilized in my most recent project Jumpi Jumper.
+            informative and helped to learn important engine architecture that I utilized in my most recent project Jumpi Jumper. For this project
+            I developed the player movement, combat, enemy movement and menu systems.
         </p>
         </div>
     </div>
@@ -45,7 +50,10 @@
         </div>
         <div class = "text-portfolioTwo" style="line-height: 100%;">
         <p>This project I worked with a group and utilized the Unity engine. We created an arena shooter that requires high paced reactions
-            and gameplay. For this project I worked on the enemy system, which include tracking, hitboxes, behaviors and the menu system.
+            and gameplay. For this project I worked on the enemy system, which include tracking, hitboxes, behaviors and the menu system. I created
+            an AI turret system that predicted player movement. This system was also incorporated into the chasing melee enemies that worked to cut off 
+            the player based off the shortest path to them. The ranged enemies system worked to get within a range of the player then weave around so as 
+            to dodge the players aim.
         </p>
         <p><a href="https://simmer.io/@fsYDTam/evil-encounters">Evil Encounters Browser Playable Build</a></p>
         </div>
