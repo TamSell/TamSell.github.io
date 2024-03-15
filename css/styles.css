@@ -74,15 +74,30 @@ footer {
     align-items: flex-start;
 }
 
-.container {
+.portfolioOne{
     display: flex;
     margin-top: 100px;
+    padding-left: 100px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
-.text-container{
+.text-portfolioOne{
     padding-left: 20px;
+    padding-right: 100px;
+}
+
+.portfolioTwo{
+    display: flex;
+    margin-top: 100px;
+    padding-left: 100px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.text-portfolioTwo{
+    padding-left: 20px;
+    padding-right: 100px;
 }
 
 footer p {
