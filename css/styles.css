@@ -14,15 +14,17 @@ header, footer {
 }
 
 header {
-    border-bottom: 2px solid #222;
+    border-top: 2px solid #222;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .header-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 header h1, header .subtitle {
@@ -30,7 +32,7 @@ header h1, header .subtitle {
 }
 
 header .subtitle {
-    font-size: 1.2em;
+    font-size: .8em;
     display: inline;
     margin-left: 10px;
 }
@@ -39,6 +41,7 @@ header nav ul, footer nav ul {
     display: flex;
     justify-content: space-between;
     padding: 0;
+    gap:10px;
 }
 
 header nav ul li, footer nav ul li {
@@ -63,10 +66,15 @@ header nav ul li a:hover, footer nav ul li a:hover {
     color: #333;
 }
 
-.container{
-    display: flex;
-    margin-top: 100px;
-    align-items: center;
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text-container{
+    font-size:  1.5em;
 }
 
 footer {
@@ -97,6 +105,7 @@ footer {
     display: flex;
     margin-top: 100px;
     padding-left: 100px;
+    padding-bottom: 100px;
     align-items: center;
     justify-content: flex-start;
 }
@@ -119,6 +128,9 @@ footer {
     padding-right: 100px;
 }
 
+.name{
+    font-weight: bold;
+}
 footer p {
     margin: 0;
 }
